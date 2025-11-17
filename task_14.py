@@ -30,11 +30,11 @@ def main() -> None:
         if number <= 0:
             print('Ошибка: число должно быть натуральным')
         else:
-            print(numbers(number))
+            numbers(number)
 
     except ValueError:
         print('Ошибка: введите корректное натуральное число')
-        
+
 
 if __name__ == "__main__":
     main()
