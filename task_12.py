@@ -10,8 +10,8 @@ def search(list_values: List[int], selected_num: int) -> int:
     searching the rest of the list.
 
     Args:
-        numbers (List[int]): List of integers to search in
-        target (int): Number to search for
+        list_values(List[int]): List of integers to search in
+        selected_num (int): Number to search for
 
     Returns:
         int: 1 if target found, 0 if not found
