@@ -2,7 +2,8 @@ def progress(first_member: float, difference: float,
              n_member: int) -> float:
     '''
     The function calculates the nth term of an arithmetic
-     progression recursively.
+    progression recursively.
+    Formula = a_n = a_n-1 + d
 
     Args:
         first_member (float): The first member of the progression
