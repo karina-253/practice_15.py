@@ -1,7 +1,7 @@
 def count(number: int) -> int:
     '''
-    The function calculates the number
-    of digits in a natural number recursively.
+    The function calculates the number of digits in a natural
+    number recursively.
 
     Args:
         number (int): Natural number
