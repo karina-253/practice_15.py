@@ -16,7 +16,7 @@ def pownum(base: float, degree: int) -> float:
     if degree == 1:
         return base
 
-    return base * pownum(base, degree-1)
+    return base * pownum(base, degree - 1)
 
 
 def main() -> None:
