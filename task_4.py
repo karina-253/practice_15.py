@@ -3,6 +3,8 @@ def sum_progress(first_member: float, difference: float,
     '''
     The function calculates the sum of the first n terms of an
      arithmetic progression recursively.
+    Formula: a_n = a_1 + (n - 1) + d
+    S_n = a_n + S_n-1
 
     Args:
         first_member (float): The first member of the progression
