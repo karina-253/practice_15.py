@@ -22,8 +22,7 @@ def ind_maxlist(numbers: List[int]) -> int:
 
     if numbers[0] >= numbers[remain_max_ind]:
         return 0
-    else:
-        return remain_max_ind
+    return remain_max_ind
 
 
 def main() -> None:
@@ -32,7 +31,7 @@ def main() -> None:
     '''
 
     try:
-        numbers = list(map(int, input().split()))
+        numbers = list(map(int, input('Введите целые числа через пробел:').split()))
 
         if len(numbers) == 0:
             print("Ошибка: список должен содержать хотя бы одно число")
