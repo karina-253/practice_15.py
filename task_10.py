@@ -15,7 +15,7 @@ def maxlist(numbers: List[int]) -> Optional[int]:
     '''
 
     if len(numbers) == 0:
-        return None
+        return 0
 
     if len(numbers) == 1:
         return numbers[0]
