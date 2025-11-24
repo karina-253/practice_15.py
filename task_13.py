@@ -16,13 +16,15 @@ def odd_list(numbers: List[int], count_elements: int) -> List[int]:
         List[int]: List containing only even numbers from the original list
     '''
 
-    if count_elements <= 0:
+    if count_elements == 0:
         return []
 
-    if numbers[-count_elements] % 2 > 0:
-        return odd_list(numbers, count_elements - 1)
+    current_element = numbers[-count_elements]
 
-    return [numbers[-count_elements]] + odd_list(numbers, count_elements - 1)
+    if current_element % 2 ==  0:
+        return [current_element] + odd_list(numbers, count_elements -1)
+
+    return odd_list(numbers, count_elements -1)
 
 
 def main() -> None:
