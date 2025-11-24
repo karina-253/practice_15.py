@@ -14,10 +14,9 @@ def simmetr(string: str, start_ind: int, end_ind: int) -> bool:
     if start_ind >= end_ind:
         return True
 
-    if string[start_ind] == string[end_ind]:
-        return simmetr(string, start_ind + 1, end_ind - 1)
-
-    return False
+    if string[start_ind] != string[end_ind]:
+        return False
+    return simmetr(string, start_ind + 1, end_ind - 1)
 
 
 def main() -> None:
